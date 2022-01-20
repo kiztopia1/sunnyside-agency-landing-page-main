@@ -1,0 +1,19 @@
+@import '../variables.scss';
+.block{
+    height: 70vh;
+
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        padding-bottom: 20px;
+    }
+    p{
+        padding-bottom: 20px;
+    }
+}
+.block-img{
+    height: 70vh;
+    padding: 0;
+}

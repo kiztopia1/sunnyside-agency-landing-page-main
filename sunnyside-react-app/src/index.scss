@@ -16,6 +16,7 @@ body {
     padding:0px;
     text-decoration: none;
     color: $white;
+    font-size: 18px;
 
 }
 .show{
@@ -34,3 +35,6 @@ a{
 .white {
     color: aliceblue;
   }
+.dark{
+  color: $very-dark-desaturated-blue;
+}
