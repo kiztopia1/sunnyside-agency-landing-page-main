@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero'
 import {Link} from 'react-router-dom'
-
+import Testimonials from './components/Testimonials';
 import './home.scss'
 function Home() {
   return <div>
@@ -32,6 +32,24 @@ function Home() {
           <Link to='/'>learn more</Link>
         </div>
       </div>
+      <Testimonials/>
+      <div className="images">
+        <img src="" alt="" />
+      </div>
+      <footer>
+        <img src="images/logo.svg" alt="" />
+        <div className="footer-nav">
+          <Link to={'/about'}>About</Link>
+          <Link to={'/server'}>Services</Link>
+          <Link to={'/projects'}>Projects</Link>
+        </div>
+        <div className='social'>
+          <img src="images/icon-facebook.svg" alt="" />
+          <img src="images/icon-instagram.svg" alt="" />
+          <img src="images/icon-twitter.svg" alt="" />
+          <img src="images/icon-pinterest.svg" alt="" />
+        </div>
+      </footer>
   </div>;
 }
 
