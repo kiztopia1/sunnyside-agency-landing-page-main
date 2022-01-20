@@ -1,0 +1,31 @@
+
+@import 'bootstrap/scss/bootstrap.scss', 'variables';
+.orange{
+    background-color: $orange;
+}
+.pink{
+    background-color: $pink;
+}
+.dark{
+    background-color: $mid-color;
+}
+.blue{
+    background-color: $blue;
+}
+.flex{
+    display: flex;
+}
+.bold{
+    font-weight: bold;
+    
+}
+p{
+    margin-bottom: 0;
+}
+.bold-w{
+    font-weight: bold;
+    color: $base-color;
+}
+.hover{
+    cursor: pointer;
+}
