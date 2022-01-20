@@ -1,9 +1,21 @@
+@import '../../variables.scss';
 .nav{
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 30px 30px;
+}
+img{
+    height: 30px;
 }
 .nav .menu{
     display: flex;
     width: 400px;
     justify-content: space-evenly;
+    li:hover{
+        background: rgba(233, 233, 233, 0.452) ;
+        width:100px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
 }
