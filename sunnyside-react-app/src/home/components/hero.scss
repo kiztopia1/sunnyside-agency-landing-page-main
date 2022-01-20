@@ -14,4 +14,14 @@
         height: 100%;
         z-index: -1;
     }
+    .arrow-cont{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .arrow{
+        height: 150px;
+        position: absolute;
+        top:45vh;
+        left: 49vw;
+    }
 }
