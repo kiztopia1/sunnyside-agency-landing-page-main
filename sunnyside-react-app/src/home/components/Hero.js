@@ -1,7 +1,8 @@
 import React from 'react';
 import Nav from './Nav';
+import './hero.scss'
 function Hero() {
-  return <div>
+  return <div className='hero'>
       <div className="nav-container">
         <Nav/>
       </div>

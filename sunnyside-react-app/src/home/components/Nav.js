@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './nav.scss'
 function Nav() {
   return <div className='nav'>
       <img src="images/logo.svg" alt="sunnyside" />
