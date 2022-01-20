@@ -2,11 +2,11 @@ import React from 'react';
 import Nav from './Nav';
 import './hero.scss'
 function Hero() {
-  return <div className='hero'>
-      <div className="nav-container">
+  return <div className='hero' >
+
+      <img className='hero-desktop-img' src="images/desktop/image-header.jpg" alt="" />
         <Nav/>
-      </div>
-      <h2>We Are Creative </h2>
+      <h2 className='header'>We Are Creative </h2>
   </div>;
 }
 
