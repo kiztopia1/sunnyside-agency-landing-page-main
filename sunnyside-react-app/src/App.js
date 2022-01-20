@@ -3,15 +3,15 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import './app.scss'
 // components
-
-
-// <Route path='/' element={<Home/>}/>
+import Home from './home/Home';
 
 function App() {
   return (
     <Router>
 
       <Routes >
+      
+ <Route path='/' element={<Home/>}/>
 
       </Routes >
     </Router>  
