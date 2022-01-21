@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import Hero from './components/Hero'
-import {a} from 'react-router-dom'
+
 import Testimonials from './components/Testimonials';
 import './home.scss'
 import getWindowDimensions from './getWindowDimensions'
