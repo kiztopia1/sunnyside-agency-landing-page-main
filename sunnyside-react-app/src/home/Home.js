@@ -20,28 +20,28 @@ function Home() {
     
       <Hero/>
       <div className="row">
-      <div className="col-md-6 block">
+      <div className="col-md-6 block down">
           <h2 className='dark'>Transform your brand</h2>
           <p className='dark'>brand We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you. </p>
-          <a href='/'>learn more</a>
+          <a href='/' className='learnMore hover-yellow'>learn more</a>
         </div>
-        <img src={`images/${screen}/image-transform.jpg`} alt="" className="col-md-6 block-img" />
+        <img src={`images/${screen}/image-transform.jpg`} alt="" className="up col-md-6 block-img" />
         <img src={`images/${screen}/image-stand-out.jpg`}  alt="" className="col-md-6 block-img" />
         <div className="col-md-6 block">
           <h2 className='dark'>Stand out to the right audience</h2>
           <p className='dark'> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-          <a href='/'>learn more</a>
+          <a href='/' className='learnMore hover-red'>learn more</a>
         </div>
         <div className="col-md-6 block-img-bg ">
           <img src={`images/${screen}/image-graphic-design.jpg `}alt="" className="block-background" />
           <h2 className='dark'>Graphic design</h2>
           <p className='dark'>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        
         </div>
         <div className="col-md-6 block-img-bg">
         <img src={`images/${screen}/image-photography.jpg`} alt="" className="block-background" />
           <h2 className='dark'>Photography </h2>
           <p className='dark'>  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-          <a href='/'>learn more</a>
         </div>
       </div>
       <Testimonials/>

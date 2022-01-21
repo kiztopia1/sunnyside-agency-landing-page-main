@@ -1,6 +1,6 @@
 @import '../variables.scss';
 .block{
-    height: 80vh;
+    min-height: 80vh;
 
     padding: 40px 70px;
     display: flex;
@@ -8,17 +8,49 @@
     justify-content: center;
     h2{
         padding-bottom: 20px;
+        font-weight: bold;
     }
     p{
         padding-bottom: 20px;
     }
 }
-.block-img{
-    height: 80vh;
-    padding: 0;
+.learnMore{
+    text-decoration: none;
+    font-weight: bold ;
+    color: $very-dark-desaturated-blue;
 }
+.hover-red{
+    position:relative;
+}
+.hover-yellow{
+    position: relative;
+}
+.learnMore::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: inline-block;
+    width: 60%;
+    height: 30%;
+    margin: 0 20%;
+    border-radius: 50px;
+    z-index: -1;
+}
+.hover-red::after{
+    background-color: $soft-red;
+}
+.hover-yellow::after{
+    background-color: $yellow;
+}
+.block-img{
+    min-height: 80vh;
+    padding: 0;
+
+}
+
 .block-img-bg{
-    height: 70vh;
+    min-height: 70vh;
     position: relative;
     padding: 30px 50px;
     display: flex;
@@ -70,4 +102,24 @@ footer{
 .social img:hover{
     color: $grayish-blue;
     cursor: pointer;
+}
+
+@media  (max-width: 375px) {
+    .block{
+        padding: 1px 30px;
+        text-align: center;
+    }
+    .block-img-bg{
+        padding: 1px 30px;
+        text-align: center;
+    }
+    .up{
+        position: relative;
+        top: -80vh;
+    }
+    .down{
+        position: relative;
+        top: 80vh;
+    }
+
 }
