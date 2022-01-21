@@ -1,10 +1,22 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import Nav from './Nav';
 import './hero.scss'
+import getWindowDimensions from '../getWindowDimensions'
 function Hero() {
-  return <div className='hero' >
+  const {width} = getWindowDimensions();
+      const [screen, setScreen] = useState('desktop')
 
-      <img className='hero-desktop-img' src="images/desktop/image-header.jpg" alt="" />
+    useEffect(()=> {
+      if(width > 375){
+        setScreen('desktop')
+      }else{
+        setScreen('mobile')
+      }
+      console.log(screen, width)
+    },[screen, width])
+  return <div className='hero' >
+      
+      <img className='hero-desktop-img' src={`images/${screen}/image-header.jpg`} alt="" />
         <Nav/>
       <h2 className='header'>We Are Creative </h2>
       <div className="arrow-cont">
