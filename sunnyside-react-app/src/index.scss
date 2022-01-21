@@ -17,6 +17,7 @@ body {
     text-decoration: none;
     color: $white;
     font-size: 18px;
+    font-family:'Fraunces' ;
 
 }
 .show{
@@ -37,4 +38,7 @@ a{
   }
 .dark{
   color: $very-dark-desaturated-blue;
+}
+@media  (max-width: 375px) {
+    
 }

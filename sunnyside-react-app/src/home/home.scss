@@ -1,8 +1,8 @@
 @import '../variables.scss';
 .block{
-    height: 70vh;
+    height: 80vh;
 
-    padding: 40px 100px;
+    padding: 40px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,13 +14,13 @@
     }
 }
 .block-img{
-    height: 70vh;
+    height: 80vh;
     padding: 0;
 }
 .block-img-bg{
     height: 70vh;
     position: relative;
-    padding: 30px 140px;
+    padding: 30px 50px;
     display: flex;
     flex-direction: column;
     justify-content: end;

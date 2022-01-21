@@ -6,16 +6,54 @@
 img{
     height: 30px;
 }
+.hamburger{
+    display: none;
+}
 .nav .menu{
     display: flex;
     width: 400px;
     justify-content: space-evenly;
     li:hover{
         background: rgba(233, 233, 233, 0.452) ;
-        width:100px;
-        border-radius: 10px;
+        width:100%;
+        border-radius: 40px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         cursor: pointer;
+    }
+}
+@media  (max-width: 375px) {
+    .nav{
+        padding: 20px 20px;
+        position: relative;
+    }
+    img{
+        width:90px;
+    }
+    .nav .menu{
+        background-color: white;
+        flex-direction: column;
+        position: absolute;
+        width: 87%;
+        text-align: center;
+        top: 60px;
+        padding: 30px;
+        z-index: 1;
+    }
+    .nav .menu li{
+        color: $very-dark-desaturated-blue;
+        padding: 15px;
+        width: 100%;
+    }
+    .nav .menu li:hover{
+        background: $soft-red;
+        color: white;
+    }
+    .hamburger{
+        display: block;
+        width: 30px;
+        margin-right: 10px;
+        height: 15px;
+        margin-top: 5px;
     }
 }
