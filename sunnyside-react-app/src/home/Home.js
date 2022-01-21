@@ -45,8 +45,11 @@ function Home() {
         </div>
       </div>
       <Testimonials/>
-      <div className="images">
-        <img src="" alt="" />
+      <div className="bottom-imgs">
+        <img src={`images/${screen}/image-gallery-milkbottles.jpg`} alt="" className="bottom-img col-md-3 col-sm-6 " />
+        <img src={`images/${screen}/image-gallery-orange.jpg`} alt="" className="bottom-img col-md-3 col-sm-6 " />
+        <img src={`images/${screen}/image-gallery-cone.jpg`} alt="" className="bottom-img col-md-3 col-sm-6 " />
+        <img src={`images/${screen}/sugarcubes.jpg`} alt="" className="bottom-img col-md-3 col-sm-6 " />
       </div>
       <footer>
         <img src="images/logo.svg" alt="" />
